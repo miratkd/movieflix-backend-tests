@@ -1,10 +1,10 @@
 INSERT INTO tb_role (authority) VALUES ('VISITOR');
 INSERT INTO tb_role (authority) VALUES ('MEMBER');
 
-INSERT INTO tb_user ( name, email, password) VALUES ( 'Bob', 'bob@gmail.com', '123456');
-INSERT INTO tb_user ( name, email, password) VALUES ( 'ana', 'ana@gmail.com', '123456');
-INSERT INTO tb_user ( name, email, password) VALUES ( 'maria', 'maria@gmail.com', '123456');
-INSERT INTO tb_user ( name, email, password) VALUES ( 'lucas', 'lucas@gmail.com', '123456');
+INSERT INTO tb_user ( name, email, password) VALUES ( 'Bob', 'bob@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user ( name, email, password) VALUES ( 'ana', 'ana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user ( name, email, password) VALUES ( 'maria', 'maria@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user ( name, email, password) VALUES ( 'lucas', 'lucas@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 
 INSERT INTO tb_user_role ( user_id, role_id) VALUES ( 1, 1);
 INSERT INTO tb_user_role ( user_id, role_id) VALUES ( 2, 2);
