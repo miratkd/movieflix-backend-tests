@@ -34,3 +34,19 @@ INSERT INTO tb_movie ( title, sub_title, year, image_Url, synopsis, genre_id) VA
 INSERT INTO tb_movie ( title, sub_title, year, image_Url, synopsis, genre_id) VALUES ( 'Titanic', NULL, 1997, 'https://www.themoviedb.org/t/p/w220_and_h330_face/cwRgiAjXREMbfr270MDZ73kQqIf.jpg', 'Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica jornada do Titanic, em 1912. Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor.', 6);
 INSERT INTO tb_movie ( title, sub_title, year, image_Url, synopsis, genre_id) VALUES ( 'Sniper Americano' , NULL, 2014, 'https://www.themoviedb.org/t/p/w220_and_h330_face/ha78BZ35Rh9VFt3fHnkwXcLAmPJ.jpg', 'História real de Chris Kyle, atirador de elite das forças especiais da marinha dos Estados Unidos. Durante a guerra do Iraque, sua missão era uma só- proteger seus companheiros. Seu dever fez dele um dos maiores atiradores da história americana. Sua precisão salva inúmeras vidas, mas também o torna um alvo preferencial. Quando Kyle finalmente volta para casa, ele descobre que não tem como deixar a guerra para trás.', 7);
 INSERT INTO tb_movie ( title, sub_title, year, image_Url, synopsis, genre_id) VALUES ( 'Guerra ao Terror', NULL, 2008, 'https://www.themoviedb.org/t/p/w220_and_h330_face/lxayvkmq1Ka7aVUeujxLxwgcrD4.jpg', 'JT Sanborn, Owen Eldridge e Matt Thompson integram o esquadrão antibombas do exército americano em missão no Iraque. Eles trabalham na destruição de um explosivo, para que seja detonado sem atingir alguém. Entretanto, um erro faz com que o artefato exploda e mate Thompson. Em seu lugar é enviado o sargento William James, que possui muito sangue-frio, o que incomoda Sanborn. Apesar disto, o trio segue na ativa, tendo consciência de que cada dia concluído de trabalho é um dia a mais de vida.', 7);
+
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 1);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 2);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 3);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 4);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 5);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 6);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 7);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 8);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 9);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 10);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 11);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 12);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 13);
+INSERT INTO tb_review ( text, user_id, movie_id) VALUES ( 'Filme muito bom', 2 , 14);
+
