@@ -8,8 +8,11 @@ public class ReviewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
     private Long id;
+    
 	private String text;
+	
 	private UserDTO user;
+	private Long movieId;
 	
 	
 	public ReviewDTO() {
@@ -28,6 +31,16 @@ public class ReviewDTO implements Serializable {
 		text = entity.getText();
 		user = new UserDTO( entity.getUser());
 		
+	}
+	
+	
+
+	public Long getMovieId() {
+		return movieId;
+	}
+
+	public void setMovieId(Long movieId) {
+		this.movieId = movieId;
 	}
 
 	public Long getId() {
