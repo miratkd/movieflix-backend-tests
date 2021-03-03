@@ -2,32 +2,31 @@ package com.devsuperior.movieflix.dto;
 
 import java.io.Serializable;
 
-import com.devsuperior.movieflix.entities.Review;
+import com.devsuperior.movieflix.entities.User;
 
-public class ReviewDTO implements Serializable {
+public class UserDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-    private Long id;
-	private String text;
-	private UserDTO user;
+	private Long id;
+	private String name;
+	private String email;
 	
-	
-	public ReviewDTO() {
+	public UserDTO() {
 		
 	}
 
-	public ReviewDTO(Long id, String text, UserDTO user ) {
+	public UserDTO(Long id, String name, String email) {
+		super();
 		this.id = id;
-		this.text = text;
-		this.user = user;
-		
+		this.name = name;
+		this.email = email;
 	}
 	
-	public ReviewDTO(Review entity) {
+	public UserDTO(User entity) {
+
 		id = entity.getId();
-		text = entity.getText();
-		user = new UserDTO( entity.getUser());
-		
+		name = entity.getName();
+		email = entity.getEmail();
 	}
 
 	public Long getId() {
@@ -38,23 +37,21 @@ public class ReviewDTO implements Serializable {
 		this.id = id;
 	}
 
-	public String getText() {
-		return text;
+	public String getName() {
+		return name;
 	}
 
-	public void setText(String text) {
-		this.text = text;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public UserDTO getUser() {
-		return user;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUser(UserDTO user) {
-		this.user = user;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-
-	
 
 	@Override
 	public int hashCode() {
@@ -72,7 +69,7 @@ public class ReviewDTO implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		ReviewDTO other = (ReviewDTO) obj;
+		UserDTO other = (UserDTO) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
