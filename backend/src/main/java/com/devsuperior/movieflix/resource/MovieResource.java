@@ -22,7 +22,12 @@ public class MovieResource {
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<MovieDTO> findById(@PathVariable Long id){
 	
-		MovieDTO dto = service.findById(id);
-		return ResponseEntity.ok().body(dto);
+		try {
+			MovieDTO dto = service.findById(id);
+			return ResponseEntity.ok().body(dto);
+		}
+		catch (Exception e) {
+			return ResponseEntity.notFound().build();
+		}
 	}
 }

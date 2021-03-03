@@ -29,7 +29,7 @@ public class MovieService {
 	@Transactional(readOnly = true)
 	public MovieDTO findById(Long id) {
 		Optional<Movie> obj = repository.findById(id);
-		Movie entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not fund"));
+		//Movie entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not fund"));
 		return new MovieDTO(obj.orElseThrow());
 	}
 }
