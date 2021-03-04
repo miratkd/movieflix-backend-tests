@@ -22,7 +22,7 @@ public class ReviewResource {
 	
 	@PostMapping
 	public ResponseEntity<ReviewDTO> insert( @RequestBody ReviewDTO dto){
-		//Infelizmente não consegui gerar o status 422 atravésda validação "@Notblank"(que retorna
+		//Infelizmente não consegui gerar o status 422 através da validação "@Notblank"(que retorna
 		//apenas o status 400) então fiz uma validação manual. 
 		if(dto.getText().isBlank()) {
 			return ResponseEntity.unprocessableEntity().build();
