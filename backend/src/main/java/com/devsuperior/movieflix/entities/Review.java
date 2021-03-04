@@ -11,6 +11,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.devsuperior.movieflix.dto.ReviewDTO;
+
 @Entity
 @Table(name = "tb_review")
 public class Review implements Serializable{
@@ -40,6 +42,11 @@ public class Review implements Serializable{
 		this.text = text;
 		this.user = user;
 		this.movie = movie;
+	}
+	
+	public Review(ReviewDTO dto) {
+		id = dto.getId();
+		text = dto.getText();
 	}
 
 	public Long getId() {
